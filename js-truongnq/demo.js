@@ -23,7 +23,7 @@ function filterProductById(listProduct, idProduct) {
             return product;
         }
     });
-    // for(int i = 0;i < listProduct.size(); i++) {
+    // for(int i = 0;i < listProduct.length; i++) {
     //     if(product.id == idProduct) {
     //         return product;
     //     }
@@ -38,8 +38,8 @@ function filterProductByQuality(listProduct) {
             arrayProduct += product;
         }
     });
-
-    // for(int i = 0;i < listProduct.size(); i++) {
+    // var length= listProduct.length
+    // for(int i = 0;i < length; i++) {
     //     if(product.quality > 0 && product.isDelete == 0) {
     //         arrayProduct += product;
     //     }
@@ -55,8 +55,8 @@ function filterProductBySaleDate(listProduct) {
             arrayProduct += product;
         }
     });
-
-    // for(int i = 0;i < listProduct.size(); i++) {
+    // var length = listProduct.length
+    // for(int i = 0;i < length; i++) {
     //     if(product.quality > 0 && product.isDelete == 0) {
     //         arrayProduct += product;
     //     }
@@ -73,7 +73,8 @@ function totalProduct(listProduct) {
             return accumulator;
         }, 0)
         // var accumulator = 0;
-        // for (i = 0; i < listProduct.length; i++) {
+        // var length = listProduct.length
+        // for (i = 0; i < length; i++) {
         //     if (listProduct[i].isDelete == 0) {
         //         accumulator+= listProduct[i].quality;
         //     }
@@ -84,7 +85,8 @@ function isHaveProductInCategory(listProduct, categoryId) {
     return listProduct.some(product => {
             return product.categoryId == categoryId;
         })
-        // for (i = 0; i < listProduct.length; i++) {
+        // var length = listProduct.length
+        // for (i = 0; i < length; i++) {
         //     if (listProduct[i].categoryId == categoryId) {
         //         return true;
         //     }
@@ -99,7 +101,8 @@ function filterProductBySaleDate2(listProduct) {
                 tempList.push(new Array(product.id, product.name));
             }
         })
-        // for (i = 0; i < listProduct.length; i++) {
+        // var length = listProduct.length
+        // for (i = 0; i < length; i++) {
         //     if (listProduct[i].saleDate > new Date() && listProduct[i].quality > 0) {
         //         tempList.push(new Array(listProduct[i].id, listProduct[i].name));
         //     }
